@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mops.css"> <!-- Corrected CSS file reference -->
+    <title>Washing Powder</title>
+</head>
+<body>
+  <header>
+    <div class="logo">MOPS</div>
+  </header>
+
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="Crown.jpeg" alt="Crown">
+        <div class="product-details">
+          <h3>Crown</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Crown', -1)">-</button>
+            <input type="number" id="quantity-Crown" value="0" min="0">
+            <button onclick="changeQuantity('Crown', 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Monkey555.jpg" alt="Monkey555">
+      <div class="product-details">
+        <h3>Monkey555</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Monkey555', -1)">-</button>
+          <input type="number" id="quantity-Monkey555" value="0" min="0">
+          <button onclick="changeQuantity('Monkey555', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Scotch Brite.jpg" alt="Scotch Brite">
+      <div class="product-details">
+        <h3>Scotch Brite</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Scotch Brite', -1)">-</button>
+          <input type="number" id="quantity-Scotch Brite" value="0" min="0">
+          <button onclick="changeQuantity('Scotch Brite', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Hard Broom.jpg" alt="Hard Broom">
+      <div class="product-details">
+        <h3>Hard Broom</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Hard Broom', -1)">-</button>
+          <input type="number" id="quantity-Hard Broom" value="0" min="0">
+          <button onclick="changeQuantity('Hard Broom', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Dusting Broom.jpg" alt="Dusting Broom">
+      <div class="product-details">
+        <h3>Dusting Broom</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Dusting Broom', -1)">-</button>
+          <input type="number" id="quantity-Dusting Broom" value="0" min="0">
+          <button onclick="changeQuantity('Dusting Broom', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Dusting Pan.jpg" alt="Dusting Pan">
+      <div class="product-details">
+        <h3>Dusting Pan</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Dusting Pan', -1)">-</button>
+          <input type="number" id="quantity-Dusting Pan" value="0" min="0">
+          <button onclick="changeQuantity('Dusting Pan', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Dusting Pan and Broom.jpg" alt="Dusting Pan and Broom">
+      <div class="product-details">
+        <h3>Dusting Pan and Broom</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Dusting Pan and Broom', -1)">-</button>
+          <input type="number" id="quantity-Dusting Pan and Broom" value="0" min="0">
+          <button onclick="changeQuantity('Dusting Pan and Broom', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Scotch Brite wiper.jpg" alt="Scotch Brite wiper">
+      <div class="product-details">
+        <h3>Scotch Brite wiper</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Scotch Brite wiper', -1)">-</button>
+          <input type="number" id="quantity-Scotch Brite wiper" value="0" min="0">
+          <button onclick="changeQuantity('Scotch Brite wiper', 1)">+</button>
+      </div>
+    </div>
+  </div>
+     
+      <div class="product">
+          <div class="product-info">
+            <img src="3in1 broom.jpg" alt="3in1 broom">
+            <div class="product-details">
+              <h3>3in1 broom </h3>
+              <p>Price: $<span class="price">10.00</span></p>
+              <p>Availability: <span class="availability">In Stock</span></p>
+            </div>
+            <div class="quantity-controls">
+                <button onclick="changeQuantity('3in1 broom', -1)">-</button>
+                <input type="number" id="quantity-3in1 broom" value="0" min="0">
+                <button onclick="changeQuantity('3in1 broom', 1)">+</button>
+            </div>
+          </div>
+        </div>
+        
+
+<script>
+    function changeQuantity(productId, delta) {
+        const quantityInput = document.getElementById(quantity-${productId});
+        let quantity = parseInt(quantityInput.value);
+        quantity = isNaN(quantity) ? 0 : quantity;
+        quantity += delta;
+        quantity = quantity < 0 ? 0 : quantity;
+        quantityInput.value = quantity;
+    }
+</script>
+
+</body>
+</html>

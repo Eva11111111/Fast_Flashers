@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="washing-powder.css"> <!-- Corrected CSS file reference -->
+    <title>Washing Powder</title>
+</head>
+<body>
+  <header>
+    <div class="logo">FRUITS</div>
+  </header>
+
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="Apples.jpg" alt="Apples">
+        <div class="product-details">
+          <h3>Apples</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Apples', -1)">-</button>
+            <input type="number" id="quantity-Apples" value="0" min="0">
+            <button onclick="changeQuantity('Apples', 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="JackFruit.jpg" alt="Jack Fruit">
+      <div class="product-details">
+        <h3>Jack Fruit</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Jack Fruit', -1)">-</button>
+          <input type="number" id="quantity-Jack Fruit" value="0" min="0">
+          <button onclick="changeQuantity('Jack Fruit', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Mangoes.jpg" alt=" Mangoes">
+      <div class="product-details">
+        <h3>Mangoes</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity(' Mangoes', -1)">-</button>
+          <input type="number" id="quantity- Mangoes" value="0" min="0">
+          <button onclick="changeQuantity(' Mangoes', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Oranges.jpg" alt="Oranges">
+      <div class="product-details">
+        <h3>Oranges</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Oranges', -1)">-</button>
+          <input type="number" id="quantity-Oranges" value="0" min="0">
+          <button onclick="changeQuantity('Oranges', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Pineapple.jpg" alt="Pineapple">
+      <div class="product-details">
+        <h3>Pineapple</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Pineapple', -1)">-</button>
+          <input type="number" id="quantity-Pineapple" value="0" min="0">
+          <button onclick="changeQuantity('Pineapple', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Sitafal.jpg" alt="Sitafal">
+      <div class="product-details">
+        <h3>Sitafal</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Sitafal', -1)">-</button>
+          <input type="number" id="quantity-Sitafal" value="0" min="0">
+          <button onclick="changeQuantity('Sitafal', 1)">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="product">
+    <div class="product-info">
+      <img src="Watermelon.jpg" alt="Watermelon">
+      <div class="product-details">
+        <h3>Watermelon</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Watermelon', -1)">-</button>
+          <input type="number" id="quantity-Watermelon" value="0" min="0">
+          <button onclick="changeQuantity('Watermelon', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  
+<script>
+    function changeQuantity(productId, delta) {
+        const quantityInput = document.getElementById(`quantity-${productId}`);
+        let quantity = parseInt(quantityInput.value);
+        quantity = isNaN(quantity) ? 0 : quantity;
+        quantity += delta;
+        quantity = quantity < 0 ? 0 : quantity;
+        quantityInput.value = quantity;
+    }
+</script>
+
+</body>
+</html>

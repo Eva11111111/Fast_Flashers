@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chips.css"> <!-- Corrected CSS file reference -->
+    <title>Bingo Chillishing PoBingo Chillier</title>
+</head>
+<body>
+  <header>
+    <div class="logo">CHIPS</div>
+  </header>
+
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="Lays Magic Masala.jpeg" alt="Lays Magic Masala">
+        <div class="product-details">
+          <h3>Lays Magic Masala</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Lays Magic Masala', -1)">-</button>
+            <input type="number" id="quantity-Lays Magic Masala" value="0" min="0">
+            <button onclick="changeQuantity('Lays Magic Masala', 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Lays Salted.jpg" alt="Lays Salted">
+      <div class="product-details">
+        <h3>Lays Salted</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Lays Salted', -1)">-</button>
+          <input type="number" id="quantity-Lays Salted" value="0" min="0">
+          <button onclick="changeQuantity('Lays Salted', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Bingo Chilli.jpg" alt="Bingo Chilli">
+      <div class="product-details">
+        <h3>Bingo Chilli</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Bingo Chilli', -1)">-</button>
+          <input type="number" id="quantity-Bingo Chilli" value="0" min="0">
+          <button onclick="changeQuantity('Bingo Chilli', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="420 Chips Tomato.jpg" alt="420 Chips Tomato">
+      <div class="product-details">
+        <h3>420 Chips Tomato</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('420 Chips Tomato', -1)">-</button>
+          <input type="number" id="quantity-420 Chips Tomato" value="0" min="0">
+          <button onclick="changeQuantity('420 Chips Tomato', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Uncle Chipps Salted.jpg" alt="Uncle Chipps Salted">
+      <div class="product-details">
+        <h3>Uncle Chipps Salted</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Uncle Chipps Salted', -1)">-</button>
+          <input type="number" id="quantity-Uncle Chipps Salted" value="0" min="0">
+          <button onclick="changeQuantity('Uncle Chipps Salted', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Uncle Chipps Spicy.jpg" alt="Uncle Chipps Spicy">
+      <div class="product-details">
+        <h3>Uncle Chipps Spicy</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Uncle Chipps Spicy', -1)">-</button>
+          <input type="number" id="quantity-Uncle Chipps Spicy" value="0" min="0">
+          <button onclick="changeQuantity('Uncle Chipps Spicy', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Kerela Banana Chips.jpg" alt="Kerela Banana Chips">
+      <div class="product-details">
+        <h3>Kerela Banana Chips</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Kerela Banana Chips', -1)">-</button>
+          <input type="number" id="quantity-Kerela Banana Chips" value="0" min="0">
+          <button onclick="changeQuantity('Kerela Banana Chips', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="Doritos Masala.jpeg" alt="Doritos Masala">
+        <div class="product-details">
+          <h3>Doritos Masala</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Doritos Masala', -1)">-</button>
+            <input type="number" id="quantity-Doritos Masala" value="0" min="0">
+            <button onclick="changeQuantity('Doritos Masala', 1)">+</button>
+        </div>
+      </div>
+    </div>
+  
+  <div class="product">
+    <div class="product-info">
+      <img src="Doritos Spicy Sweet Chili.jpg" alt="Doritos Spicy Sweet Chili">
+      <div class="product-details">
+        <h3>Doritos Spicy Sweet Chili</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Doritos Spicy Sweet Chili', -1)">-</button>
+          <input type="number" id="quantity-Doritos Spicy Sweet Chili" value="0" min="0">
+          <button onclick="changeQuantity('Doritos Spicy Sweet Chili', 1)">+</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="Doritos Super Spicy.jpeg" alt="Doritos Super Spicy">
+        <div class="product-details">
+          <h3>Doritos Super Spicy</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Doritos Super Spicy', -1)">-</button>
+            <input type="number" id="quantity-Doritos Super Spicy" value="0" min="0">
+            <button onclick="changeQuantity('Doritos Super Spicy', 1)">+</button>
+        </div>
+      </div>
+    </div>
+    
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="Lays Cream and Onion.jpeg" alt="Lays Cream and Onion">
+        <div class="product-details">
+          <h3>Lays Cream and Onion</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Lays Cream and Onion', -1)">-</button>
+            <input type="number" id="quantity-Lays Cream and Onion" value="0" min="0">
+            <button onclick="changeQuantity('Lays Cream and Onion', 1)">+</button>
+        </div>
+      </div>
+    </div>
+    
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="Too Yum Masala.jpeg" alt="Too Yum Masala">
+        <div class="product-details">
+          <h3>Too Yum Masala</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Too Yum Masala', -1)">-</button>
+            <input type="number" id="quantity-Too Yum Masala" value="0" min="0">
+            <button onclick="changeQuantity('Too Yum Masala', 1)">+</button>
+        </div>
+      </div>
+    </div>
+    
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="Doritos Nacho Cheese.jpeg" alt="Doritos Nacho Cheese">
+        <div class="product-details">
+          <h3>Doritos Nacho Cheese</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Doritos Nacho Cheese', -1)">-</button>
+            <input type="number" id="quantity-Doritos Nacho Cheese" value="0" min="0">
+            <button onclick="changeQuantity('Doritos Nacho Cheese', 1)">+</button>
+        </div>
+      </div>
+    </div>
+  
+<script>
+    function changeQuantity(productId, delta) {
+        const quantityInput = document.getElementById(quantity-${productId});
+        let quantity = parseInt(quantityInput.value);
+        quantity = isNaN(quantity) ? 0 : quantity;
+        quantity += delta;
+        quantity = quantity < 0 ? 0 : quantity;
+        quantityInput.value = quantity;
+    }
+</script>
+
+</body>
+</html>

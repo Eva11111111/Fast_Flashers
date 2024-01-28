@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="washing-powder.css"> <!-- Corrected CSS file reference -->
+    <title>Washing Powder</title>
+</head>
+<body>
+  <header>
+    <div class="logo">WASHING POWDERS AND LIQUIDS</div>
+  </header>
+
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="Amul-Milk.jpg" alt="Amul Milk">
+        <div class="product-details">
+          <h3>Amul Milk</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Amul Milk', -1)">-</button>
+            <input type="number" id="quantity-Amul Milk" value="0" min="0">
+            <button onclick="changeQuantity('Amul Milk', 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Ammi-Visagna.jpg" alt="Ammi-Visagna">
+      <div class="product-details">
+        <h3>Ammi-Visagna</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Ammi-Visagna', -1)">-</button>
+          <input type="number" id="quantity-Ammi-Visagna" value="0" min="0">
+          <button onclick="changeQuantity('Ammi-Visagna', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Arokya Milk.jpg" alt="Arokya Milk">
+      <div class="product-details">
+        <h3>Arokya Milk</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Arokya Milk', -1)">-</button>
+          <input type="number" id="quantity-Arokya Milk" value="0" min="0">
+          <button onclick="changeQuantity('Arokya Milk', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Heritage Milk.jpg" alt="Heritage Milk">
+      <div class="product-details">
+        <h3>Heritage Milk</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Heritage Milk', -1)">-</button>
+          <input type="number" id="quantity-Heritage Milk" value="0" min="0">
+          <button onclick="changeQuantity('Heritage Milk', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Amul Buttermilk.jpg" alt="Amul Buttermilk">
+      <div class="product-details">
+        <h3>Amul Buttermilk</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Amul Buttermilk', -1)">-</button>
+          <input type="number" id="quantity-Amul Buttermilk" value="0" min="0">
+          <button onclick="changeQuantity('Amul Buttermilk', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Milma Pride.jpg" alt="Milma Pride">
+      <div class="product-details">
+        <h3>Milma Pride</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Milma Pride', -1)">-</button>
+          <input type="number" id="quantity-Milma Pride" value="0" min="0">
+          <button onclick="changeQuantity('Milma Pride', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="MotherDairy Cheese.jpg" alt="MotherDairy Cheese">
+      <div class="product-details">
+        <h3>MotherDairy Cheese</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('MotherDairy Cheese', -1)">-</button>
+          <input type="number" id="quantity-MotherDairy Cheese" value="0" min="0">
+          <button onclick="changeQuantity('MotherDairy Cheese', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Nandani.jpg" alt="Nandani">
+      <div class="product-details">
+        <h3>Nandani</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Nandani', -1)">-</button>
+          <input type="number" id="quantity-Nandani" value="0" min="0">
+          <button onclick="changeQuantity('Nandani', 1)">+</button>
+      </div>
+    </div>
+  </div>
+     
+      <div class="product">
+          <div class="product-info">
+            <img src="Jersey Curd.jpg" alt="Jersey Curd">
+            <div class="product-details">
+              <h3>Jersey Curd </h3>
+              <p>Price: $<span class="price">10.00</span></p>
+              <p>Availability: <span class="availability">In Stock</span></p>
+            </div>
+            <div class="quantity-controls">
+                <button onclick="changeQuantity('Jersey Curd', -1)">-</button>
+                <input type="number" id="quantity-Jersey Curd" value="0" min="0">
+                <button onclick="changeQuantity('Jersey Curd', 1)">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-info">
+            <img src="Heritage Curd.jpg" alt="HeritageCurd">
+            <div class="product-details">
+              <h3>Heritage Curd </h3>
+              <p>Price: $<span class="price">10.00</span></p>
+              <p>Availability: <span class="availability">In Stock</span></p>
+            </div>
+            <div class="quantity-controls">
+                <button onclick="changeQuantity('Heritage Curd', -1)">-</button>
+                <input type="number" id="quantity-Heritage Curd" value="0" min="0">
+                <button onclick="changeQuantity('Heritage Curd', 1)">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-info">
+            <img src="HatsuN cURD.jpg" alt="Hatsun Curd">
+            <div class="product-details">
+              <h3>Hatsun Curd </h3>
+              <p>Price: $<span class="price">10.00</span></p>
+              <p>Availability: <span class="availability">In Stock</span></p>
+            </div>
+            <div class="quantity-controls">
+                <button onclick="changeQuantity('Hatsun Curd', -1)">-</button>
+                <input type="number" id="quantity-Hatsun Curd" value="0" min="0">
+                <button onclick="changeQuantity('Hatsun Curd', 1)">+</button>
+            </div>
+          </div>
+        </div>
+
+        <var>
+          <div class="product">
+            <div class="product-info">
+              <img src="Amul Cheese.jpg" alt="Amul Cheese">
+              <div class="product-details">
+                <h3>Amul Cheese</h3>
+                <p>Price: $<span class="price">10.00</span></p>
+                <p>Availability: <span class="availability">In Stock</span></p>
+              </div>
+              <div class="quantity-controls">
+                  <button onclick="changeQuantity('Amul Cheese', -1)">-</button>
+                  <input type="number" id="quantity-Amul Cheese" value="0" min="0">
+                  <button onclick="changeQuantity('Amul Cheese', 1)">+</button>
+              </div>
+            </div>
+          </div>
+
+          <var>
+            <div class="product">
+              <div class="product-info">
+                <img src="Amul Masti.jpg" alt="Amul Masti">
+                <div class="product-details">
+                  <h3>Amul Masti</h3>
+                  <p>Price: $<span class="price">10.00</span></p>
+                  <p>Availability: <span class="availability">In Stock</span></p>
+                </div>
+                <div class="quantity-controls">
+                    <button onclick="changeQuantity('Bandex', -1)">-</button>
+                    <input type="number" id="quantity-Bandex" value="0" min="0">
+                    <button onclick="changeQuantity('Bandex', 1)">+</button>
+                </div>
+              </div>
+            </div>
+
+<script>
+    function changeQuantity(productId, delta) {
+        const quantityInput = document.getElementById(`quantity-${productId}`);
+        let quantity = parseInt(quantityInput.value);
+        quantity = isNaN(quantity) ? 0 : quantity;
+        quantity += delta;
+        quantity = quantity < 0 ? 0 : quantity;
+        quantityInput.value = quantity;
+    }
+</script>
+
+</body>
+</html>

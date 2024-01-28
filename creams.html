@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shaving-kit.css"> <!-- Corrected CSS file reference -->
+    <title>Washing Powder</title>
+</head>
+<body>
+  <header>
+    <div class="logo">CREAMS</div>
+  </header>
+
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="Ammi-Visagna.jpg" alt="Ammi-Visagna">
+        <div class="product-details">
+          <h3>Ammi-Visagna</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Ammi-Visagna', -1)">-</button>
+            <input type="number" id="quantity-Ammi-Visagna" value="0" min="0">
+            <button onclick="changeQuantity('Ammi-Visagna', 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Candid.jpg" alt="Candid">
+      <div class="product-details">
+        <h3>Candid</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Candid', -1)">-</button>
+          <input type="number" id="quantity-Candid" value="0" min="0">
+          <button onclick="changeQuantity('Candid', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Fucidin-H.jpg" alt="Fucidin-H">
+      <div class="product-details">
+        <h3>Fucidin-H</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Fucidin-H', -1)">-</button>
+          <input type="number" id="quantity-Fucidin-H" value="0" min="0">
+          <button onclick="changeQuantity('Fucidin-H', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Lamfin.jpg" alt="Lamfin">
+      <div class="product-details">
+        <h3>Lamfin</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Lamfin', -1)">-</button>
+          <input type="number" id="quantity-Lamfin" value="0" min="0">
+          <button onclick="changeQuantity('Lamfin', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Vicco.jpg" alt="Vicco">
+      <div class="product-details">
+        <h3>Vicco</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Vicco', -1)">-</button>
+          <input type="number" id="quantity-Vicco" value="0" min="0">
+          <button onclick="changeQuantity('Vicco', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function changeQuantity(productId, delta) {
+        const quantityInput = document.getElementById(`quantity-${productId}`);
+        let quantity = parseInt(quantityInput.value);
+        quantity = isNaN(quantity) ? 0 : quantity;
+        quantity += delta;
+        quantity = quantity < 0 ? 0 : quantity;
+        quantityInput.value = quantity;
+    }
+</script>
+
+</body>
+</html>

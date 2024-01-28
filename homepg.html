@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepg.css">
+    <title>Myntra Clone - Home</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <header>
+      <img src="logo.png" alt="Your Company Logo" class="logo">
+        <div class="search-bar">
+          <input type="text" placeholder="Search for products...">
+          <button>Search</button>
+      </div>
+      <div class="cart-container">
+        <img src="path-to-your-cart-icon.png" alt="Cart" class="cart-icon">
+        <span class="cart-count">0</span>
+    </div>
+    <div class="auth-links">
+      <a href="createaccount.html">Create Account</a>
+      <span> | </span>
+      <a href="signin.html">Sign In</a>
+  </div>
+
+    </header>
+    
+    <div class="category-container">
+      <div class="category">
+          <span>Sanitary & Healthcare</span> 
+          <div class="dropdown">
+            <a href="sanitary-pads.html">Sanitary Pads</a>
+            <a href="shaving-kit.html">Shaving Kit</a>
+            <a href="tablets.html">Tablets</a>
+            <a href="syrups.html">Syrups</a>
+            <a href="creams.html">Creams</a>
+            <a href="bandages.html">Bandages</a>
+        </div>               
+      </div>
+      <div class="category">
+          <span>Home Supplies</span>
+          <div class="dropdown">
+            <a href="washing-powder.html">Washing Powder</a>
+            <a href="mops.html">Mops</a>
+            <a href="soaps.html">Soaps</a>
+            <a href="tupper-ware.html">Tupper Ware</a>
+            
+        </div>        
+      </div>
+      <div class="category">
+          <span>Snacks</span>
+          <div class="dropdown">
+            <a href="biscuits.html">Biscuits</a>
+            <a href="chocolates.html">Chocolates</a>
+            <a href="chips.html">Chips</a>
+            <a href="savory-snack-foods.html">Savory Snack Foods</a>
+            <a href="noodles.html">Noodles</a>
+ 
+        </div>        
+      </div>
+      <div class="category">
+        <span>Groceries</span>
+        <div class="dropdown">
+          <a href="fruits.html">Fruits</a>
+          <a href="vegetables.html">Vegetables</a>
+          <a href="dairy-products.html">Dairy Products</a>
+          <a href="dry-fruits.html">Dry Fruits</a>
+          <a href="oils.html">Oils</a>
+
+      </div>        
+    </div>
+    <div class="category">
+      <span>Toiletries</span>
+      <div class="dropdown">
+        <a href="shampoo.html">Shampoo</a>
+        <a href="hair-oil.html">Hair Oil</a>
+        <a href="body-wash.html">Body Wash</a>
+        <a href="soap.html">Soap</a>
+        <a href="hand-wash.html">Hand Wash</a>
+   
+    </div>        
+  </div>
+  </div>
+
+  <main>
+    <div class="advertisement-board">
+      <div class="ad">
+        <img id="ad-image" alt="Advertisement">
+            </div>
+      </div>
+      <div id="product-section">
+        <!-- Product information will be added here -->
+    </div>
+  </main>
+
+    <script>
+      const images = [
+      "CardExodus.jpg",
+      "Dettol.jpg",
+      "Chocolate.jpg",
+      "H&S.jpg",
+      "Yogurt.jpg",
+      "Waffers.jpg",
+    ];
+
+    let currentImageIndex = 0;
+
+    function changeImage() {
+      // Updated the id here
+      const adImage = document.getElementById('ad-image');
+      adImage.src = images[currentImageIndex];
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+    }
+  
+    setInterval(changeImage, 3000);
+    window.onload = changeImage;
+
+        function showProducts() {
+          const products = [
+              { name: 'Apolo', price: '$19.99', imageUrl: 'Apolo.jpg' },
+              { name: 'Product 6', price: '$29.99', imageUrl: 'product2.jpg' },
+              { name: 'Product 6', price: '$29.99', imageUrl: 'product2.jpg' },
+              { name: 'Product 6', price: '$29.99', imageUrl: 'product2.jpg' },
+              { name: 'Surf Excel', price: '$29.99', imageUrl: 'Surf Excel.jpg' },
+              { name: 'Product 6', price: '$29.99', imageUrl: 'product2.jpg' },
+              { name: 'Product 6', price: '$29.99', imageUrl: 'product2.jpg' },
+              { name: 'Tide', price: '$29.99', imageUrl: 'Tide.jpg' },
+              { name: 'Product 6', price: '$29.99', imageUrl: 'product2.jpg' },
+              { name: 'Product 6', price: '$29.99', imageUrl: 'product2.jpg' },
+              { name: 'Vanish', price: '$29.99', imageUrl: 'Vanish.jpg' },
+              { name: 'Product 6', price: '$29.99', imageUrl: 'product2.jpg' },
+              { name: 'Product 6', price: '$29.99', imageUrl: 'product2.jpg' },
+              { name: 'Product 6', price: '$29.99', imageUrl: 'product2.jpg' },
+              { name: 'Product 6', price: '$29.99', imageUrl: 'product2.jpg' },
+              { name: 'Product 6', price: '$29.99', imageUrl: 'product2.jpg' },
+              { name: 'Product 6', price: '$29.99', imageUrl: 'product2.jpg' },
+              { name: 'Product 6', price: '$29.99', imageUrl: 'product2.jpg' },
+              { name: 'Ariel', price: '$29.99', imageUrl: 'Ariell.jpeg' },
+              { name: 'Product 6', price: '$29.99', imageUrl: 'product2.jpg' },
+              
+              // Add more products as needed
+          ];
+  
+          const productSection = document.getElementById('product-section');
+          const productHTML = products.map(product => `
+              <div class="product">
+                  <img src="${product.imageUrl}" alt="${product.name}" class="product-image">
+                  <h3>${product.name}</h3>
+                  <p>Price: ${product.price}</p>
+              </div>
+          `).join('');
+  
+          productSection.innerHTML = productHTML;
+      }
+  
+      // Call the function to show products
+      showProducts();
+      </script>
+      
+        <script>
+        function showItems(category) {
+          const items = [
+              { name: 'Item 1', features: 'Feature 1, Feature 2', quantity: 0, imageUrl: 'item1.jpg' },
+              // Add more items as needed
+          ];
+
+          const itemListHTML = items.map(item => `
+              <div class="item">
+                  <img src="${item.imageUrl}" alt="${item.name}" class="item-image">
+                  <h3>${item.name}</h3>
+                  <p>Features: ${item.features}</p>
+                  <div class="quantity-controls">
+                      <button onclick="changeQuantity('${item.name}', -1)">-</button>
+                      <input type="number" id="quantity-${item.name}" value="${item.quantity}" min="0">
+                      <button onclick="changeQuantity('${item.name}', 1)">+</button>
+                  </div>
+              </div>
+          `).join('');
+
+          document.getElementById('item-list-container').innerHTML = itemListHTML;
+      }
+
+      function changeQuantity(itemName, delta) {
+          const quantityInput = document.getElementById(`quantity-${itemName}`);
+          let quantity = parseInt(quantityInput.value);
+          quantity = isNaN(quantity) ? 0 : quantity;
+          quantity += delta;
+          quantity = quantity < 0 ? 0 : quantity;
+          quantityInput.value = quantity;
+      }
+
+      // Example: Show items for the first category on page load
+      showItems('Category 1');
+    </script>
+    <script>
+    document.querySelectorAll('.category').forEach(category => {
+      category.addEventListener('mouseover', () => {
+          document.querySelector('.ad').classList.add('blur');
+      });
+    
+      category.addEventListener('mouseleave', (e) => {
+          if (!category.contains(e.relatedTarget)) {
+              document.querySelector('.ad').classList.remove('blur');
+          }
+      });
+    });
+    </script>
+    <script>
+      $(document).ready(function(){
+          $('.category').hover(
+              function() {
+                  $('.advertisement-board').addClass('blur');
+              }, function() {
+                  $('.advertisement-board').removeClass('blur');
+              }
+          );
+  
+          $('.dropdown').hover(
+              function() {
+                  $('.advertisement-board').addClass('blur');
+              }, function() {
+                  $('.advertisement-board').removeClass('blur');
+              }
+          );
+      });
+      </script>
+      
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hair-oil.css"> <!-- Corrected CSS file reference -->
+    <title>Washing Powder</title>
+</head>
+<body>
+  <header>
+    <div class="logo">HAIR OIL</div>
+  </header>
+
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="Dabur Amla.jpeg" alt="Dabur Amla">
+        <div class="product-details">
+          <h3>Dabur Amla</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Dabur Amla', -1)">-</button>
+            <input type="number" id="quantity-Dabur Amla" value="0" min="0">
+            <button onclick="changeQuantity('Dabur Amla', 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Rice Hair Oil.jpg" alt="Rice Hair Oil">
+      <div class="product-details">
+        <h3>Rice Hair Oil</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Rice Hair Oil', -1)">-</button>
+          <input type="number" id="quantity-Rice Hair Oil" value="0" min="0">
+          <button onclick="changeQuantity('Rice Hair Oil', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Vatika Coconut Oil.jpg" alt="Vatika Coconut Oil">
+      <div class="product-details">
+        <h3>Vatika Coconut Oil</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Vatika Coconut Oil', -1)">-</button>
+          <input type="number" id="quantity-Vatika Coconut Oil" value="0" min="0">
+          <button onclick="changeQuantity('Vatika Coconut Oil', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Amla Hair Oil.jpg" alt="Amla Hair Oil">
+      <div class="product-details">
+        <h3>Amla Hair Oil</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Amla Hair Oil', -1)">-</button>
+          <input type="number" id="quantity-Amla Hair Oil" value="0" min="0">
+          <button onclick="changeQuantity('Amla Hair Oil', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Anti Dandruff Oil.jpg" alt="Anti Dandruff Oil">
+      <div class="product-details">
+        <h3>Anti Dandruff Oil</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Anti Dandruff Oil', -1)">-</button>
+          <input type="number" id="quantity-Anti Dandruff Oil" value="0" min="0">
+          <button onclick="changeQuantity('Anti Dandruff Oil', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Parachute Jasmine Gold.jpg" alt="Parachute Jasmine Gold">
+      <div class="product-details">
+        <h3>Parachute Jasmine Gold</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Parachute Jasmine Gold', -1)">-</button>
+          <input type="number" id="quantity-Parachute Jasmine Gold" value="0" min="0">
+          <button onclick="changeQuantity('Parachute Jasmine Gold', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Vatika Almond Oil.jpg" alt="Vatika Almond Oil">
+      <div class="product-details">
+        <h3>Vatika Almond Oil</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Vatika Almond Oil', -1)">-</button>
+          <input type="number" id="quantity-Vatika Almond Oil" value="0" min="0">
+          <button onclick="changeQuantity('Vatika Almond Oil', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Mielle.jpg" alt="Mielle">
+      <div class="product-details">
+        <h3>Mielle</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Mielle', -1)">-</button>
+          <input type="number" id="quantity-Mielle" value="0" min="0">
+          <button onclick="changeQuantity('Mielle', 1)">+</button>
+      </div>
+    </div>
+  </div>
+     
+
+<script>
+    function changeQuantity(productId, delta) {
+        const quantityInput = document.getElementById(quantity-${productId});
+        let quantity = parseInt(quantityInput.value);
+        quantity = isNaN(quantity) ? 0 : quantity;
+        quantity += delta;
+        quantity = quantity < 0 ? 0 : quantity;
+        quantityInput.value = quantity;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hand-wash.css"> <!-- Corrected CSS file reference -->
+    <title>Washing Powder</title>
+</head>
+<body>
+  <header>
+    <div class="logo">HAND WASH AND SANITIZER</div>
+  </header>
+
+  <div class="product-container">
+    <div class="product">
+      <div class="product-info">
+        <img src="Dettol Original.jpeg" alt="Dettol Original">
+        <div class="product-details">
+          <h3>Dettol Original</h3>
+          <p>Price: $<span class="price">10.00</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="changeQuantity('Dettol Original', -1)">-</button>
+            <input type="number" id="quantity-Dettol Original" value="0" min="0">
+            <button onclick="changeQuantity('Dettol Original', 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Dettol Rose.jpg" alt="Dettol Rose">
+      <div class="product-details">
+        <h3>Dettol Rose</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Dettol Rose', -1)">-</button>
+          <input type="number" id="quantity-Dettol Rose" value="0" min="0">
+          <button onclick="changeQuantity('Dettol Rose', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Himalaya.jpg" alt="Himalaya">
+      <div class="product-details">
+        <h3>Himalaya</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Himalaya', -1)">-</button>
+          <input type="number" id="quantity-Himalaya" value="0" min="0">
+          <button onclick="changeQuantity('Himalaya', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Lifebuoy.jpg" alt="Lifebuoy">
+      <div class="product-details">
+        <h3>Lifebuoy</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Lifebuoy', -1)">-</button>
+          <input type="number" id="quantity-Lifebuoy" value="0" min="0">
+          <button onclick="changeQuantity('Lifebuoy', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Patanjali Aloe Vera.jpg" alt="Patanjali Aloe Vera">
+      <div class="product-details">
+        <h3>Patanjali Aloe Vera</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Patanjali Aloe Vera', -1)">-</button>
+          <input type="number" id="quantity-Patanjali Aloe Vera" value="0" min="0">
+          <button onclick="changeQuantity('Patanjali Aloe Vera', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Purell.jpg" alt="Purell">
+      <div class="product-details">
+        <h3>Purell</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Purell', -1)">-</button>
+          <input type="number" id="quantity-Purell" value="0" min="0">
+          <button onclick="changeQuantity('Purell', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="equate Hand Sanitizer.jpg" alt="equate Hand Sanitizer">
+      <div class="product-details">
+        <h3>equate Hand Sanitizer</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('equate Hand Sanitizer', -1)">-</button>
+          <input type="number" id="quantity-equate Hand Sanitizer" value="0" min="0">
+          <button onclick="changeQuantity('equate Hand Sanitizer', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-info">
+      <img src="Herbal Hand Sanitizer.jpg" alt="Biscoff">
+      <div class="product-details">
+        <h3>Biscoff</h3>
+        <p>Price: $<span class="price">10.00</span></p>
+        <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+      <div class="quantity-controls">
+          <button onclick="changeQuantity('Biscoff', -1)">-</button>
+          <input type="number" id="quantity-Biscoff" value="0" min="0">
+          <button onclick="changeQuantity('Biscoff', 1)">+</button>
+      </div>
+    </div>
+  </div>
+     
+<script>
+    function changeQuantity(productId, delta) {
+        const quantityInput = document.getElementById(quantity-${productId});
+        let quantity = parseInt(quantityInput.value);
+        quantity = isNaN(quantity) ? 0 : quantity;
+        quantity += delta;
+        quantity = quantity < 0 ? 0 : quantity;
+        quantityInput.value = quantity;
+    }
+</script>
+
+</body>
+</html>
